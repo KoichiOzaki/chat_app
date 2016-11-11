@@ -12,6 +12,15 @@
  *
 */
 
-@import "reset";
+//vendor assets
 @import "bootstrap";
-@import "bootstrap-theme";
+
+//settings
+@import "valiables";
+@import "mixins";
+
+//modules
+@import "reset";
+@import "layout";
+@import "btn.scss";
+@import "chat.scss";

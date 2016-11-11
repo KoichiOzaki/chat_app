@@ -1,0 +1,9 @@
+// 画面サイズ指定
+$minWidth: 992px;
+$wrapperHeight: 100vh;
+// chat画面
+$SideWidth: 300px;
+$MainWidth: calc(100% - #{$SideWidth} );
+$chatHeaderHeight: 100px;
+$chatFooterHeight: 100px;
+$chatBodyHeight: calc(100% - #{$chatFooterHeight + $chatHeaderHeight} );

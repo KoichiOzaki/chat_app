@@ -1,0 +1,17 @@
+.bt{
+  display: inline-block;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  &--gray{
+    background-color: #fff;
+    color: #555;
+    font-size: 14px;
+    border: 2px solid;
+    &:hover{
+      color: #38aef0;
+    }
+  }
+}

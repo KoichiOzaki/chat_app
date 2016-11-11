@@ -1,0 +1,166 @@
+// side_bar
+.side {
+  float:left;
+  width: $SideWidth;
+  height: 100%;
+  color: #fff;
+  background-color: #eaa628;
+
+  &__header {
+    height: $chatHeaderHeight;
+    padding: 10px;
+    @include clearfix;
+    background-color: #c19d6a;
+  }
+
+  &__user {
+    float: left;
+    padding: 10px 0;
+    line-height: 60px;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+
+  &__actions {
+    float: right;
+    display: inline-block;
+    margin: 20px 0 20px 3px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+
+.side-group {
+  &__link {
+    &:focus,:hover {
+      background-color: #f9c48d;
+      color: black;
+    }
+
+    a {
+      display: block;
+      color: #fff;
+      padding: 20px;
+    }
+  }
+  &__name {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid;
+  }
+  &__message {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+}
+
+//chat
+.chat-wrapper {
+  float:left;
+  width: $MainWidth;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+.chat-body{
+  padding: 40px 40px;
+  width: 100%;
+  height:$chatBodyHeight;
+  overflow-y: scroll;
+}
+
+.chat-header {
+  height: 100px;
+  padding: 10px 40px;
+  border-bottom: 1px solid #eee;
+  @include clearfix;
+
+  &--left {
+    float:left;
+  }
+
+  &--right {
+    float: right;
+  }
+
+  &__title {
+    letter-spacing: 2px;
+    line-height: 20px;
+    padding-top: 30px;
+    font-size: 20px;
+  }
+
+  &__members {
+    padding-top: 10px;
+    line-height: 20px;
+    color: #999;
+    font-size: 12px;
+  }
+
+  &__member {
+    margin-left: 3px;
+  }
+
+  &__menu {
+    display: inline-block;
+    margin: 20px 0 20px 3px;
+    line-height: 40px;
+  }
+}
+
+.chat-messages{
+}
+
+.chat-message{
+  padding-bottom: 40px;
+  &__header{
+    line-height: 20px;
+    @include clearfix;
+  }
+  &__name{
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &__date{
+    float: left;
+    margin-left: 12px;
+    font-size: 12px;
+    color: #999;
+  }
+  &__time{
+    float: left;
+    margin-left: 12px;
+    font-size: 12px;
+    color: #999;
+  }
+  &__content{
+    font-size: 14px;
+  }
+}
+//footer
+.chat-footer{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+  height: $chatFooterHeight;
+  padding: 25px;
+  border-top: 1px solid #eee;
+}
+
+.message-box{
+  border: 1px solid #ddd;
+  height:50px;
+  width: calc(100% - 100px);
+  float:left;
+}
+
+.message-submit{
+  float: left;
+  height: 50px;
+  margin-left: 25px;
+}
