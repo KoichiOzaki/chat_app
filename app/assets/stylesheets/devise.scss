@@ -1,0 +1,88 @@
+.devise-wrapper{
+  background-color: #f5f5f5;
+}
+
+.devise-header{
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  @include clearfix;
+
+  .app-logo{
+    padding: 15px;
+    line-height: 40px;
+    float:left;
+    font-family: "Impact";
+    font-size: 30px;
+    font-weight: bold;
+    color: #ea8806;
+  }
+
+  .menu{
+    float: right;
+  }
+}
+
+.devise-main{
+  &__inner{
+    background-color: #fff;
+    margin:60px auto;
+    max-width: 860px;
+    padding: 30px 20px;
+    @include clearfix;
+
+    &--left{
+      float: left;
+      width: 50%;
+    }
+    &--right{
+      float: right;
+      width: 50%;
+    }
+  }
+
+  h2{
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-weight: 200;
+  }
+  h2:after{
+    content: '';
+    display: block;
+    width: 60px;
+    padding-top: 5px;
+    border-bottom: 2px solid #eaa628;
+  }
+}
+
+.account-form{
+  label{
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .input-field{
+    border: 1px solid #C5C5C5;
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 1px;  }
+  .submit{
+    padding-top: 20px;
+  }
+}
+
+.devise_link_font{
+  font-size: 12px;
+  p{
+    display: inline-block;
+    margin-top: 0px;
+    text-align: center;
+    a{
+      color: #de3535;
+      text-decoration: underline;
+    }
+  }
+}

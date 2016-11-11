@@ -1,17 +1,26 @@
-%h2 Log in
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true
-  .field
-    = f.label :password
-    %br/
-    = f.password_field :password, autocomplete: "off"
-  - if devise_mapping.rememberable?
-    .field
-      = f.check_box :remember_me
-      = f.label :remember_me
-  .actions
-    = f.submit "Log in"
-= render "devise/shared/links"
+.content-wrapper.devise-wrapper
+  .devise-header
+    %h1.app-logo GroupChat
+  .devise-main
+    .devise-main__inner
+      .devise-main__inner--left
+        %h2 Log in
+        .devise_link_font
+          = render "devise/shared/links"
+      .devise-main__inner--right
+        .account-form
+          = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+            .field
+              = f.label :email
+              %br/
+              = f.email_field :email, autofocus: true, class: 'input-field'
+            .field
+              = f.label :password
+              %br/
+              = f.password_field :password, autocomplete: "off", class: 'input-field'
+            - if devise_mapping.rememberable?
+              .field
+                = f.check_box :remember_me
+                = f.label :remember_me
+            .actions
+              = f.submit "Log in", class: 'bt bt--orange'
